@@ -17,16 +17,16 @@ fun main() {
     //Loop FizzBuzz
     for(i in 1..3) {
        when {
-           i%3==0 &&i%5==0 -> println("FizzBuzz")
+           i%3==0 && i%5==0 -> println("FizzBuzz")
 
            i%3 == 0 -> println("Fizz")
-           i%5==0 -> println("Buzz")
-           else -> println(i)
+           i%5 == 0 -> println("Buzz")
+           else -> println(i)34
        }
     }
 
     // List Operator
-    val nums = listOf(1,2,3,4,5,6)
+    local val nums = listOfint(1,2,3,4,5,6)
 
     println("Sum: ${nums.sum()}")
     println("Even: ${nums.filter {it % 2 == 0}}")
